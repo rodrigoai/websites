@@ -1,0 +1,58 @@
+:root {
+    /* Color Palette - Raw Values (Anthropic & Logo Inspired) */
+    --palette-brand-dark: #141413;
+    --palette-brand-light: #faf9f5;
+    --palette-brand-mid-gray: #b0aea5;
+    --palette-brand-light-gray: #e8e6dc;
+
+    /* Logo Petal Colors & Anthropic Accents */
+    --palette-brand-violet: #4916E4;
+    --palette-brand-pink: #DE536F;
+    --palette-brand-yellow: #D9C439;
+    --palette-brand-cyan: #AEE4E8;
+    --palette-brand-orange-red: #F15A24;
+
+    --palette-white: #FFFFFF;
+    --palette-black: #000000;
+
+    /* Theme Variables - Dark Mode Re-mapping */
+    --theme-bg-body: var(--palette-brand-dark);
+    --theme-bg-surface: #1E1E1D;
+    /* Slightly lighter than bg-body for depth */
+    --theme-bg-dark: #000000;
+    /* True black for high-contrast sections */
+    --theme-bg-subtle: #2A2A28;
+    /* Subsided surfaces */
+
+    --theme-text-main: var(--palette-brand-light);
+    --theme-text-muted: var(--palette-brand-mid-gray);
+    --theme-text-on-dark: var(--palette-brand-light);
+    --theme-text-on-accent: var(--palette-white);
+
+    /* Mapped Accents (Preserved for Brand Consistency) */
+    --theme-accent-primary: var(--palette-brand-violet);
+    --theme-accent-primary-hover: #5D2FEB;
+    /* Slightly lighter for dark mode hover */
+    --theme-accent-secondary: var(--palette-brand-pink);
+    --theme-accent-secondary-hover: #E7728A;
+    /* Slightly lighter for dark mode hover */
+    --theme-accent-tertiary: var(--palette-brand-yellow);
+
+    --theme-border-subtle: #333331;
+    --theme-border-dark: var(--palette-brand-light);
+
+    /* RGBA Variants for Dark Mode */
+    --theme-rgba-violet-15: rgba(73, 22, 228, 0.25);
+    /* Increased opacity for dark bg */
+    --theme-rgba-violet-10: rgba(73, 22, 228, 0.2);
+    --theme-rgba-pink-30: rgba(222, 83, 111, 0.4);
+    --theme-rgba-light-gray-50: rgba(255, 255, 255, 0.1);
+    /* White-based subtle bg */
+    --theme-rgba-white-05: rgba(255, 255, 255, 0.05);
+    --theme-rgba-white-10: rgba(255, 255, 255, 0.1);
+    --theme-rgba-white-20: rgba(255, 255, 255, 0.2);
+    --theme-rgba-black-08: rgba(0, 0, 0, 0.2);
+    /* Black shadows adjusted for dark mode */
+    --theme-rgba-black-10: rgba(0, 0, 0, 0.3);
+    --theme-rgba-black-20: rgba(0, 0, 0, 0.5);
+}

@@ -736,6 +736,13 @@ strong {
     margin-bottom: var(--space-md);
 }
 
+.option__logo {
+    max-width: 160px;
+    height: auto;
+    display: block;
+    margin-bottom: var(--space-md);
+}
+
 .option__title {
     font-size: 1.75rem;
     margin-bottom: var(--space-xs);
