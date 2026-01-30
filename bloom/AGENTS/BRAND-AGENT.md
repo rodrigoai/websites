@@ -25,9 +25,9 @@ To access Anthropic's official brand identity and style resources, use this skil
 
 **Accent Colors:**
 
-- Orange: `#d97757` - Primary accent
-- Blue: `#6a9bcc` - Secondary accent
-- Green: `#788c5d` - Tertiary accent
+- Orange: `#4916E4` - Primary accent
+- Blue: `#DE536F` - Secondary accent
+- Green: `#D9C439` - Tertiary accent
 
 ### Typography
 

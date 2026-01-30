@@ -1,0 +1,57 @@
+:root {
+    /* Color Palette - Raw Values (Anthropic & Logo Inspired) */
+    --palette-brand-dark: #141413;
+    --palette-brand-light: #faf9f5;
+    --palette-brand-mid-gray: #b0aea5;
+    --palette-brand-light-gray: #e8e6dc;
+
+    /* Logo Petal Colors & Anthropic Accents */
+    --palette-brand-violet: #4916E4;
+    /* Anthropic Orange re-mapped or Violet from logo */
+    --palette-brand-pink: #DE536F;
+    /* Anthropic Blue re-mapped or Pink from logo */
+    --palette-brand-yellow: #D9C439;
+    /* Anthropic Green re-mapped or Yellow from logo */
+    --palette-brand-cyan: #AEE4E8;
+    /* Light cyan from logo petal */
+    --palette-brand-orange-red: #F15A24;
+    /* Orange-red from logo petal */
+
+    --palette-white: #FFFFFF;
+    --palette-black: #000000;
+
+    /* Theme Variables - Semantic Layer */
+    --theme-bg-body: var(--palette-brand-light);
+    --theme-bg-surface: var(--palette-white);
+    --theme-bg-dark: var(--palette-brand-dark);
+    --theme-bg-subtle: var(--palette-brand-light-gray);
+
+    --theme-text-main: var(--palette-brand-dark);
+    --theme-text-muted: var(--palette-brand-mid-gray);
+    --theme-text-on-dark: var(--palette-brand-light);
+    --theme-text-on-accent: var(--palette-white);
+
+    /* Mapped Accents */
+    --theme-accent-primary: var(--palette-brand-violet);
+    --theme-accent-primary-hover: #3A12B8;
+    /* Darker variant for hover */
+    --theme-accent-secondary: var(--palette-brand-pink);
+    --theme-accent-secondary-hover: #C1425B;
+    /* Darker variant for hover */
+    --theme-accent-tertiary: var(--palette-brand-yellow);
+
+    --theme-border-subtle: var(--palette-brand-light-gray);
+    --theme-border-dark: var(--palette-brand-dark);
+
+    /* RGBA Variants for Transparency (Calibrated for New Palette) */
+    --theme-rgba-violet-15: rgba(73, 22, 228, 0.15);
+    --theme-rgba-violet-10: rgba(73, 22, 228, 0.1);
+    --theme-rgba-pink-30: rgba(222, 83, 111, 0.3);
+    --theme-rgba-light-gray-50: rgba(232, 230, 220, 0.5);
+    --theme-rgba-white-05: rgba(255, 255, 255, 0.05);
+    --theme-rgba-white-10: rgba(255, 255, 255, 0.1);
+    --theme-rgba-white-20: rgba(255, 255, 255, 0.2);
+    --theme-rgba-black-08: rgba(0, 0, 0, 0.08);
+    --theme-rgba-black-10: rgba(0, 0, 0, 0.1);
+    --theme-rgba-black-20: rgba(0, 0, 0, 0.2);
+}
