@@ -235,7 +235,7 @@ strong {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-xl);
-    align-items: center;
+    align-items: start;
 }
 
 .hero__content {
@@ -924,6 +924,7 @@ strong {
         order: -1;
     }
 
+
     .hero {
         padding-top: var(--space-lg);
     }
@@ -952,6 +953,21 @@ strong {
         padding-top: 20px;
         background: var(--palette-aliceblue);
     }
+
+    .image__photo {
+        width: 100%;
+        height: 280px;
+        display: block;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        margin: auto;
+        object-fit: none;
+        object-position: center -20px;
+        object-fit: cover;
+        border-radius: 14px;
+    }
+
 }
 
 @media (max-width: 640px) {

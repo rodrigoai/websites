@@ -1,0 +1,307 @@
+/* CSS Reset and Variables */
+@font-face {
+    font-family: 'Guanabara Sans';
+    src: url('../fonts/Guanabara_Sans_Book.otf') format('opentype');
+    font-weight: 400;
+    /* Book/Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Guanabara Sans';
+    src: url('../fonts/Guanabara_Sans_Book_Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Eighties';
+    src: url('../fonts/Eighties-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --color-dark: #151515;
+    --color-light: #ECE7E2;
+    --color-red: #DC3E23;
+    --color-purple: #4227DF;
+    --color-purple-dark: #241579;
+    --color-white: #FFFFFF;
+
+    --font-primary: 'Guanabara Sans', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+    /* Keep Playfair for "Bianca" if Eighties is only for display/titles */
+    --font-display: 'Eighties', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: #F8F6F4;
+    /* Light beige base */
+    color: var(--color-dark);
+    line-height: 1.2;
+    overflow-x: hidden;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Noise Overlay */
+.noise-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/noise.jpg.jpeg');
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 50;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+.header {
+    position: relative;
+    width: 100%;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flowers-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.flowers-bg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.badge-container {
+    margin-top: -24px;
+    /* Overlap with flowers */
+    z-index: 10;
+}
+
+.badge-dark {
+    background-color: var(--color-dark);
+    padding: 16px 24px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.badge-dark span {
+    color: var(--color-light);
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    /* Check if uppercase in design? Figma says "Webinar Gratuito" mixed case. */
+    text-transform: none;
+    /* Correcting to normal case */
+}
+
+/* Hero Text */
+.hero-text {
+    padding: 24px 20px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-main {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--color-dark);
+    line-height: 0.95;
+    margin-bottom: 20px;
+}
+
+.highlight-red {
+    color: var(--color-red);
+    font-family: var(--font-primary);
+    /* Or maybe serif italic? Figma says Guanabara Sans Medium Italic */
+    font-style: italic;
+    font-weight: 500;
+}
+
+.title-sub {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 0.9;
+    margin-bottom: 24px;
+}
+
+.highlight-purple {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 82px;
+    color: var(--color-purple);
+    display: block;
+    margin-top: -20px;
+    letter-spacing: 0px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 340px;
+    margin-bottom: 30px;
+}
+
+.event-info {
+    display: flex;
+    gap: 32px;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 24px;
+    /* Estimate */
+    margin-bottom: 30px;
+}
+
+.btn-cta {
+    background: linear-gradient(180deg, var(--color-purple) 0%, var(--color-purple-dark) 100%);
+    border: 1px solid #2B2066;
+    border-radius: 8px;
+    padding: 16px 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(66, 39, 223, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.btn-cta:active {
+    transform: scale(0.98);
+}
+
+/* Speaker Section */
+.speaker-section {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.speaker-wrapper {
+    position: relative;
+    width: 100%;
+    /* Or fit to image */
+    display: flex;
+    justify-content: center;
+}
+
+.speaker-img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.speaker-details {
+    position: absolute;
+    top: 83px;
+    left: 5%;
+    width: 23%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.speaker-text {}
+
+/* Re-evaluating Speaker Layout based on Figma "bianca-hero 2" 
+   It seems "bianca-hero" image might ALREADY include the background.
+   Wait, Figma structure:
+   - "bianca-hero 2" (Image)
+   - "Frame 5" (Text + Logo) is ON TOP.
+   
+   If I just put the image, I need to overlay the text. 
+   The text is on the LEFT side, roughly middle-bottom.
+*/
+
+.speaker-details {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 21%;
+    z-index: 2;
+}
+
+.speaker-name {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-dark);
+    /* Or #1e1e1e */
+    margin-bottom: 8px;
+    line-height: 1.1;
+}
+
+.speaker-role {
+    font-size: 10px;
+    font-weight: 700;
+    /* Bold/Book? Figma says Book/Medium */
+    text-transform: uppercase;
+    color: var(--color-dark);
+    line-height: 1.4;
+}
+
+.speaker-role p {
+    margin-bottom: 2px;
+}
+
+.logo-area {
+    margin-top: 16px;
+}
+
+.brand-logo {
+    width: 50px;
+    height: auto;
+}
+
+.arrow-decoration {
+    width: 40px;
+    height: auto;
+}
+
+/* Responsiveness adjustments for speaker section */
+@media (min-width: 375px) {
+    .highlight-purple {
+        font-size: 80px;
+    }
+}
