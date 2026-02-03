@@ -201,6 +201,7 @@ body {
     text-align: center;
     box-shadow: 0px 4px 10px rgba(66, 39, 223, 0.3);
     transition: transform 0.2s ease;
+    align-self: center;
 }
 
 .btn-cta:active {
@@ -304,4 +305,356 @@ body {
     .highlight-purple {
         font-size: 80px;
     }
+}
+
+/* --- New Sections Styling --- */
+
+.section {
+    padding: 60px 20px;
+    margin-bottom: 20px;
+}
+
+.section-title,
+.section-headline {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-subhead {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Identification Section */
+.identification-section {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin: 40px 10px;
+    padding: 40px 24px;
+}
+
+.check-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.check-list li {
+    margin-bottom: 16px;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.check-list i {
+    color: var(--color-purple);
+    margin-top: 4px;
+}
+
+.exclusion-note {
+    background-color: #f9f9f9;
+    padding: 16px;
+    border-left: 4px solid var(--color-red);
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #555;
+}
+
+.btn-secondary {
+    display: block;
+    text-align: center;
+    color: var(--color-purple);
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Value Section */
+.value-section {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.learning-list {
+    list-style: none;
+    max-width: 400px;
+    margin: 0 auto 40px;
+}
+
+.learning-list li {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: flex-start;
+}
+
+.learning-list .marker {
+    font-family: var(--font-display);
+    font-size: 24px;
+    color: var(--color-purple);
+    opacity: 0.5;
+    min-width: 30px;
+}
+
+.strong-close {
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: 24px;
+    color: var(--color-dark);
+    margin-bottom: 40px;
+}
+
+.strong-close p {
+    margin-bottom: 8px;
+}
+
+/* Authority Bio Section */
+.authority-bio-section {
+    background-color: #ECE7E2;
+    /* Light beige from palette */
+    padding: 60px 20px;
+}
+
+.auth-title {
+    font-family: var(--font-display);
+    font-size: 42px;
+    color: var(--color-purple);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bio-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.bio-name {
+    font-family: var(--font-serif);
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.bio-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.bio-quote {
+    font-weight: 700;
+    color: var(--color-purple-dark);
+    margin-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+}
+
+/* Post Event Section (Cards) */
+.intro-text {
+    text-align: center;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.card.bloom-lab {
+    border-top: 6px solid #FFC0CB;
+    /* Pinkish */
+}
+
+.card.diagnosis {
+    border-top: 6px solid var(--color-purple);
+    background-color: #fdfdfd;
+}
+
+.card-title {
+    font-family: var(--font-primary);
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777;
+    margin-bottom: 24px;
+}
+
+.card-list {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.card-list li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.card-list li::before {
+    content: "•";
+    color: var(--color-purple);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.card-tag {
+    display: inline-block;
+    background: #eee;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.card-tag.premium {
+    background: var(--color-purple);
+    color: white;
+}
+
+.note {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* FAQ Section */
+.faq-section {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 20px 0;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: var(--color-dark);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    /* Adjust as needed */
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+/* Footer / CTA Final */
+.footer-section {
+    background-color: var(--color-dark);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer-section .title-sub {
+    color: white;
+}
+
+.footer-text {
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 360px;
+    margin: 0 auto 40px;
+}
+
+.input-field {
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    font-family: var(--font-primary);
+    font-size: 16px;
+}
+
+.full-width {
+    width: 100%;
+    max-width: 100%;
+}
+
+.trust-badges {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-bottom: 40px;
+}
+
+.copyright {
+    font-size: 12px;
+    opacity: 0.4;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+/* Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
