@@ -12,82 +12,98 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="bloom-figma/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Desktop Flowers -->
-    <!-- <div class="flowers-container-full"></div> -->
-
     <main class="container">
         <!-- Noise Texture Overlay -->
         <div class="noise-overlay"></div>
 
-        <!-- Header / Flowers -->
-        <header class="header">
-            <div class="flowers-container">
-                <img src="bloom-figma/img/flowers-mobile.png" alt="Flowers Background" class="flowers-bg">
-            </div>
-            <div class="badge-container hero-animate delay-100">
-                <div class="badge-dark">
-                    <span>Webinar Gratuito</span>
+        <!-- Hero Wrapper -->
+        <div class="hero-wrapper">
+            <div class="flowers-container-full hero-animate delay-500"></div>
+
+            <!-- Header / Flowers -->
+            <header class="header">
+                <!-- Desktop Header Content -->
+                <div class="header-desktop-content">
+                    <img src="img/logo-bloom.png" alt="Bloom Logo" class="logo-desktop">
+                    <nav class="nav-desktop">
+                        <a href="#contatos" class="nav-link">Contatos</a>
+                        <a href="#cadastro" class="btn-cta-small">Inscreva-se Gratuitamente</a>
+                    </nav>
                 </div>
-            </div>
-        </header>
 
-        <!-- Hero Text -->
-        <section class="hero-text">
-            <h1 class="title-main hero-animate delay-200">
-                Chega de<br>
-                fazer <span class="highlight-red italics">barulho</span>.
-            </h1>
-            <h2 class="title-sub hero-animate delay-300">
-                Hora de construir<br>
-                <span class="highlight-purple">marca.</span>
-            </h2>
-
-            <p class="description hero-animate delay-400">
-                Um <strong>webinar gratuito</strong> para empresas que querem
-                posicionamento claro, engajamento real
-                e crescimento com sentido.
-            </p>
-
-            <div class="event-info hero-animate delay-500">
-                <span class="date">25 de Fev</span>
-                <span class="time">19h às 20h</span>
-            </div>
-
-            <a href="#cadastro" class="btn-cta hero-animate delay-600">
-                Inscreva-se Gratuitamente
-            </a>
-        </section>
-
-        <!-- Speaker Section (Hero Visual) -->
-        <section class="speaker-section">
-            <div class="speaker-wrapper">
-                <img src="bloom-figma/img/bianca-hero.png" alt="Bianca Venturotti" class="speaker-img">
-                <img src="bloom-figma/img/bloom-flower.png" alt="Bloom360"
-                    class="bloom-flower-sticker animate-on-scroll">
-                <img src="bloom-figma/img/sticker-bloom.png" alt="Bloom360" class="bloom-sticker animate-on-scroll">
-
-                <div class="speaker-details">
-                    <div class="speaker-text">
-                        <h3 class="speaker-name">Bianca <br> Venturotti</h3>
-                        <div class="speaker-role">
-                            <p>Ex-CMO Boca Rosa Company</p>
-                            <p>MTV/Viacom</p>
-                            <p>Estrategista de Marca</p>
-                        </div>
+                <div class="flowers-container">
+                    <img src="img/flowers-mobile.png" alt="Flowers Background" class="flowers-bg">
+                </div>
+                <div class="badge-container hero-animate delay-100">
+                    <div class="badge-dark">
+                        <span>Webinar Gratuito</span>
                     </div>
-                    <img src="bloom-figma/img/speaker-arrow.png" alt="Arrow" class="arrow-decoration">
                 </div>
-            </div>
-        </section>
+            </header>
+
+            <!-- Hero Text -->
+            <section class="hero-text">
+                <h1 class="title-main hero-animate delay-200">
+                    Chega de<br>
+                    fazer <span class="highlight-red italics">barulho</span>.
+                </h1>
+                <h2 class="title-sub hero-animate delay-300">
+                    Hora de construir<br>
+                    <span class="highlight-purple">marca.</span>
+                </h2>
+
+                <p class="description hero-animate delay-400">
+                    Um <strong>webinar gratuito</strong> para empresas que querem
+                    posicionamento claro, engajamento real
+                    e crescimento com sentido.
+                </p>
+
+                <div class="event-info hero-animate delay-500">
+                    <span class="date">25 de Fev</span>
+                    <span class="time">19h às 20h</span>
+                    <img src="img/arrow.png" alt="Arrow Down" class="hidden-mobile">
+                </div>
+
+                <a href="#cadastro" class="btn-cta hidden-desktop hero-animate delay-600">
+                    Inscreva-se Gratuitamente
+                </a>
+            </section>
+
+            <!-- Speaker Section (Hero Visual) -->
+            <section class="speaker-section hero-animate">
+                <div class="speaker-wrapper">
+                    <img src="img/bianca-hero.png" alt="Bianca Venturotti" class="speaker-img">
+                    <img src="img/bloom-flower.png" alt="Bloom360"
+                        class="bloom-flower-sticker animate-on-scroll hidden-desktop">
+                    <img src="img/sticker-bloom.png" alt="Bloom360"
+                        class="bloom-sticker animate-on-scroll hidden-desktop">
+
+                    <div class="speaker-details">
+                        <div class="speaker-text">
+                            <h3 class="speaker-name">Bianca <br> Venturotti</h3>
+                            <div class="speaker-role">
+                                <p>Ex-CMO Boca Rosa Company</p>
+                                <p>MTV/Viacom</p>
+                                <p>Estrategista de Marca</p>
+                            </div>
+                        </div>
+                        <img src="img/speaker-arrow.png" alt="Arrow" class="arrow-decoration">
+                    </div>
+                </div>
+            </section>
+        </div><!-- End Hero Wrapper -->
 
         <!-- SEÇÃO 2: Identificação -->
         <section class="section identification-section animate-on-scroll">
+            <img src="img/bloom-flower.png" alt="Bloom360"
+                class="bloom-flower-sticker-id-section animate-on-scroll hidden-mobile">
+
             <h2 class="section-title">Este webinar é para você que:</h2>
             <ul class="check-list">
                 <li><i class="fa-solid fa-check"></i> Já investe em marketing, mas sente que a <strong>marca não
@@ -109,7 +125,7 @@
         <!-- SEÇÃO 3: Valor -->
         <section class="section value-section animate-on-scroll">
             <h2 class="section-headline">O que você vai aprender</h2>
-            <p class="section-subhead">Em um único encontro, você vai entender:</p>
+            <p class="section-subhead hidden-desktop">Em um único encontro, você vai entender:</p>
 
             <ul class="learning-list">
                 <li>
@@ -140,14 +156,13 @@
                 <p>Sem barulho.</p>
             </div>
 
-            <a href="#cadastro" class="btn-cta">Garantir minha vaga gratuita</a>
+            <a href="#cadastro" class="btn-cta hidden-desktop">Garantir minha vaga gratuita</a>
         </section>
 
         <!-- SEÇÃO 4: Autoridade (Bio Detalhada) -->
         <section class="section authority-bio-section animate-on-scroll">
             <h2 class="auth-title">Quem conduz</h2>
-            <img class="bianca-carol-bio" src="bloom-figma/img/bio-bianca-carol.png"
-                alt="Bianca Venturotti e Carol Paiffer">
+            <img class="bianca-carol-bio" src="img/bio-bianca-carol.png" alt="Bianca Venturotti e Carol Paiffer">
             <div class="bio-content">
                 <h3 class="bio-name">Bianca Venturotti</h3>
                 <p>Executiva e estrategista de branding e comunicação, com mais de 15 anos de atuação entre
@@ -174,7 +189,7 @@
 
             <div class="cards-container">
                 <div class="card bloom-lab">
-                    <img src="bloom-figma/img/logo-bloom.png" class="card-title" alt="">
+                    <img src="img/logo-bloom.png" class="card-title" alt="">
                     <p class="card-subtitle">Workshop estratégico em grupo</p>
                     <ul class="card-list">
                         <li>Diagnóstico de marca por empresa</li>
@@ -260,7 +275,7 @@
 
     </main>
 
-    <script src="bloom-figma/js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
